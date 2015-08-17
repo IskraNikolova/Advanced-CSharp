@@ -1,1 +1,6 @@
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.exe.config
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.pdb
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.csprojResolveAssemblyReference.cache
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.pdb
