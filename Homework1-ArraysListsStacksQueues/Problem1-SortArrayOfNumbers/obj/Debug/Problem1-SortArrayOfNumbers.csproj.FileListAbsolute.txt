@@ -1,0 +1,1 @@
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.exe.config
