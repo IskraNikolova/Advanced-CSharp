@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2-SortArrayOfNumbers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-CategorizeNumbers-FindMinMaxAverage", "Problem3-CategorizeNumbers-FindMinMaxAverage\Problem3-CategorizeNumbers-FindMinMaxAverage.csproj", "{AD63A8F4-EF69-4F29-9732-C1225E790D27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-SequencesOfEqualStrings", "Problem4-SequencesOfEqualStrings\Problem4-SequencesOfEqualStrings.csproj", "{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AD63A8F4-EF69-4F29-9732-C1225E790D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD63A8F4-EF69-4F29-9732-C1225E790D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD63A8F4-EF69-4F29-9732-C1225E790D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
