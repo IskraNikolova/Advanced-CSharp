@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-CategorizeNumbers-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-SequencesOfEqualStrings", "Problem4-SequencesOfEqualStrings\Problem4-SequencesOfEqualStrings.csproj", "{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-LongestIncreasingSequence", "Problem5-LongestIncreasingSequence\Problem5-LongestIncreasingSequence.csproj", "{B78B7C79-3FAC-4433-8AE9-F92395099740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDA8344-FB0A-490A-BDEC-6DE3ACE1DA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78B7C79-3FAC-4433-8AE9-F92395099740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78B7C79-3FAC-4433-8AE9-F92395099740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78B7C79-3FAC-4433-8AE9-F92395099740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78B7C79-3FAC-4433-8AE9-F92395099740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
