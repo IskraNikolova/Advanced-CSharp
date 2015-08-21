@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-LongestIncreasingS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-SubsetSums", "Problem5-SubsetSums\Problem5-SubsetSums.csproj", "{E2264B50-8171-4EC3-A785-284E5AB98ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem7-SortedSubsetSums", "Problem7-SortedSubsetSums\Problem7-SortedSubsetSums.csproj", "{F772DDA5-2BD6-4DBE-909F-4831488F3922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E2264B50-8171-4EC3-A785-284E5AB98ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2264B50-8171-4EC3-A785-284E5AB98ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2264B50-8171-4EC3-A785-284E5AB98ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F772DDA5-2BD6-4DBE-909F-4831488F3922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F772DDA5-2BD6-4DBE-909F-4831488F3922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F772DDA5-2BD6-4DBE-909F-4831488F3922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F772DDA5-2BD6-4DBE-909F-4831488F3922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

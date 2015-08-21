@@ -1,0 +1,5 @@
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bin\Debug\Problem7-SortedSubsetSums.exe.config
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bin\Debug\Problem7-SortedSubsetSums.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bin\Debug\Problem7-SortedSubsetSums.pdb
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.pdb
