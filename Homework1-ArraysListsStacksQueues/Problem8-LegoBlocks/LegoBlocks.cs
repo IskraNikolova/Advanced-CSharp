@@ -32,24 +32,25 @@ public class LegoBlocks
             secondJaggedAray[i] = rowsOfSecondAray.ToArray();
         }
 
-        bool check = true;
+        bool revision = true;
 
 
-        int legoRowLenght = firstJaggedAray[0].Length + secondJaggedAray[0].Length;
-        int counterAllBlocks = legoRowLenght;
+        int rowLenght = firstJaggedAray[0].Length + secondJaggedAray[0].Length;
+        int counterblocks = rowLenght;
 
         for (int i = 1; i < rows; i++)
         {
             int leftSide = firstJaggedAray[i].Length;
             int rightSide = secondJaggedAray[i].Length;
-            counterAllBlocks += leftSide + rightSide;
-            if (firstJaggedAray[i].Length + secondJaggedAray[i].Length != legoRowLenght)
+
+            counterblocks += leftSide + rightSide;
+            if (firstJaggedAray[i].Length + secondJaggedAray[i].Length != rowLenght)
             {
-                check = false;
+                revision = false;
             }
         }
 
-        if (check)
+        if (revision)
         {
             int count = 0;
             for (int i = 0; i < rows; i++)
@@ -80,7 +81,7 @@ public class LegoBlocks
         }
         else
         {
-            Console.WriteLine("The total number of cells is: " + counterAllBlocks);
+            Console.WriteLine("The total number of cells is: " + counterblocks);
         }
     }
 }
