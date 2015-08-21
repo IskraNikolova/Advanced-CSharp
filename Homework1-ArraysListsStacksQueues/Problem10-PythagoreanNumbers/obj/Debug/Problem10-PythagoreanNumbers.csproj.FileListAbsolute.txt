@@ -1,0 +1,6 @@
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\bin\Debug\Problem10-PythagoreanNumbers.exe.config
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\bin\Debug\Problem10-PythagoreanNumbers.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\bin\Debug\Problem10-PythagoreanNumbers.pdb
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\obj\Debug\Problem10-PythagoreanNumbers.csprojResolveAssemblyReference.cache
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\obj\Debug\Problem10-PythagoreanNumbers.exe
+F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem10-PythagoreanNumbers\obj\Debug\Problem10-PythagoreanNumbers.pdb

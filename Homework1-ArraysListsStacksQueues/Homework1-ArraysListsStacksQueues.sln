@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem8-LegoBlocks", "Prob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem9-StuckNumbers", "Problem9-StuckNumbers\Problem9-StuckNumbers.csproj", "{37897D22-F7FC-45F2-B34B-8A3AD8824C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10-PythagoreanNumbers", "Problem10-PythagoreanNumbers\Problem10-PythagoreanNumbers.csproj", "{0E4153B1-D124-46B8-8C46-BF201939684B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{37897D22-F7FC-45F2-B34B-8A3AD8824C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37897D22-F7FC-45F2-B34B-8A3AD8824C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37897D22-F7FC-45F2-B34B-8A3AD8824C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4153B1-D124-46B8-8C46-BF201939684B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4153B1-D124-46B8-8C46-BF201939684B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4153B1-D124-46B8-8C46-BF201939684B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4153B1-D124-46B8-8C46-BF201939684B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
