@@ -25,38 +25,10 @@ public class LargerThanNeighbours
     /// <returns></returns>
     public static bool IsLargerThanNeighbours(int[] number, int index)
     {
-        bool isLarge = false;
+        bool isLarge = number[index] > number[index + 1] && number[index] > number[index - 1];
 
-        if (number[index] > number[index + 1] && number[index] > number[index - 1])
-        {
-           isLarge = true;
-        }
-            //if (index > 0 && index < number.Length - 1)
-            //{
-            //    if (number[index] > number[index + 1] && number[index] > number[index - 1])
-            //    {
-            //       isLarge = true;
-            //    }
-            //}
-            //else
-            //{
-            //    if (index == 0)
-            //    {
-            //        if (number[index] > number[index + 1])
-            //        {
-            //            isLarge = true;
-            //        }
-            //    }
-            //    else if (index == number.Length)
-            //    {
-            //        if (number[index] > number[index - 1])
-            //        {
-            //            isLarge = true;
-            //        }
-            //    }
-            //}
-
-            return isLarge;
+        return isLarge;
     }
 }
+
 
