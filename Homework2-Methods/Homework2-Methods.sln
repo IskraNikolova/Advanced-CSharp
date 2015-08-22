@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1-BiggerNumber", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2-LastDigitOfNumber", "Problem2-LastDigitOfNumber\Problem2-LastDigitOfNumber.csproj", "{CEF44BFF-D4F6-447E-BEA1-52A85660749F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-LargerThanNeighbours", "Problem3-LargerThanNeighbours\Problem3-LargerThanNeighbours.csproj", "{39C338E1-8A58-4B3A-A317-01E8058EC1D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CEF44BFF-D4F6-447E-BEA1-52A85660749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF44BFF-D4F6-447E-BEA1-52A85660749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF44BFF-D4F6-447E-BEA1-52A85660749F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C338E1-8A58-4B3A-A317-01E8058EC1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C338E1-8A58-4B3A-A317-01E8058EC1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C338E1-8A58-4B3A-A317-01E8058EC1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C338E1-8A58-4B3A-A317-01E8058EC1D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
