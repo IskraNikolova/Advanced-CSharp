@@ -8,7 +8,10 @@ public class SortArrayOfNumbers
     /// </summary>
     public static void Main()
     {
-        int[] collectionOfNumbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        int[] collectionOfNumbers = Console.ReadLine()
+                                   .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                                   .Select(int.Parse).ToArray();
+
         Array.Sort(collectionOfNumbers);
 
         Console.WriteLine(string.Join(" ", collectionOfNumbers));
