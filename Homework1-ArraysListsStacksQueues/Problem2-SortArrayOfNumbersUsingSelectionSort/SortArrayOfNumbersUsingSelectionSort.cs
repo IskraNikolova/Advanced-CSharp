@@ -4,30 +4,29 @@ using System.Linq;
 public class SortArrayOfNumbersUsingSelectionSort
 {
     /// <summary>
-    /// A program to sort an array of numbers and then print them back on the console. 
+    /// A program to sort an array of numbers and then print them back on the console.
+    /// !!! Use the selection sort algorithm. 
     /// </summary>
     public static void Main()
     {
         int[] collectionOfNumbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-        while (true)
+
+        for (int i = 0; i < collectionOfNumbers.Length - 1; i++)
         {
-            bool hasSwapped = false;
-            for (int number = 0; number < collectionOfNumbers.Length - 1; number++)
+            int smallest = i;
+            for (int j = i + 1; j < collectionOfNumbers.Length; j++)
             {
-                if (collectionOfNumbers[number] > collectionOfNumbers[number + 1])
+                if (collectionOfNumbers[smallest] > collectionOfNumbers[j])
                 {
-                    int oldValue = collectionOfNumbers[number];
-                    collectionOfNumbers[number] = collectionOfNumbers[number + 1];
-                    collectionOfNumbers[number + 1] = oldValue;
-                    hasSwapped = true;
+                    smallest = j;
                 }
-             
             }
-            if (hasSwapped == false)
-            {
-                break;
-            }
+
+            int swap = collectionOfNumbers[smallest];
+            collectionOfNumbers[smallest] = collectionOfNumbers[i];
+            collectionOfNumbers[i] = swap;
         }
+
         Console.WriteLine(string.Join(" ", collectionOfNumbers));
     }
 }
