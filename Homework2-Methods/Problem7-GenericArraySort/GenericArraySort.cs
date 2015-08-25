@@ -13,7 +13,7 @@ public class GenericArraySort
     public static void Main()
     {
         int[] numbers = {2, 4, 6, 1, -8};
-        string[] text = {"zaz", "cba", "baa", "azis"};
+        string[] text = {"zaz", "cba", "bca", "azis"};
         DateTime[] dates = {new DateTime(2014, 3, 9), new DateTime(2011, 11, 5), new DateTime(2005, 8, 7)};
 
         Console.WriteLine(String.Join( ",", SortArray(numbers)));
