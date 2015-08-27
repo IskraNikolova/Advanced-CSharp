@@ -8,8 +8,8 @@ public class SequenceInMatrix
         string[,] matrix =
         {
             {"c", "c", "d", "c"},
-            {"a", "d", "h", "ff"},
-            {"d", "", "a", "ho"},
+            {"a", "c", "h", "ff"},
+            {"d", "", "c", "ho"},
         };
 
         //string[,] matrix2 =
@@ -170,7 +170,7 @@ public class SequenceInMatrix
         for (int count = 0; count < matrix.GetLength(0) - 1; count++)
         {
             sequenceInMatrixLeftDiagonalList.Clear();
-            for (int row = 0 + count, column = 0; row < matrix.GetLength(0) - 1; column++, row++)
+            for (int row = count, column = 0; row < matrix.GetLength(0) - 1; column++, row++)
             {
                 if (matrix[row, column] == matrix[row + 1, column + 1])
                 {
