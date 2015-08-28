@@ -24,13 +24,11 @@ public class CountSymbols
                 sortInputChars.Add(element, 1);
             }
         }
+
         foreach (var element in sortInputChars)
         {
             Console.WriteLine("{0}: {1} time/s", element.Key, element.Value);
         }
-        Console.WriteLine(sortInputChars.Count());
-       
-
-    }
+     }
 }
 
