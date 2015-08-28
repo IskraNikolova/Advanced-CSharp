@@ -189,7 +189,7 @@ public class SequenceInMatrix
         for (int count = 0; count < matrix.GetLength(1) - 1; count++)
         {
             sequenceInMatrixLeftDiagonalList.Clear();
-            for (int column = 1 + count, row = 0; column < matrix.GetLength(1) - 1; row++ , column++)
+            for (int column = count + 1, row = 0; column < matrix.GetLength(1) - 1; row++ , column++)
             {
                 if (matrix[row, column] == matrix[row + 1, column + 1])
                 {
