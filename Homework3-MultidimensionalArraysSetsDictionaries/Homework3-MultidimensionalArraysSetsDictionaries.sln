@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem6-CountSymbols", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem7-Phonebook", "Problem7-Phonebook\Problem7-Phonebook.csproj", "{034000C4-2CC6-4F76-9389-52DEA7E63ABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem8-NightLife", "Problem8-NightLife\Problem8-NightLife.csproj", "{E37E1403-0268-4047-ADC1-F7F3002B4DF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{034000C4-2CC6-4F76-9389-52DEA7E63ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{034000C4-2CC6-4F76-9389-52DEA7E63ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{034000C4-2CC6-4F76-9389-52DEA7E63ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E37E1403-0268-4047-ADC1-F7F3002B4DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37E1403-0268-4047-ADC1-F7F3002B4DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37E1403-0268-4047-ADC1-F7F3002B4DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37E1403-0268-4047-ADC1-F7F3002B4DF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
