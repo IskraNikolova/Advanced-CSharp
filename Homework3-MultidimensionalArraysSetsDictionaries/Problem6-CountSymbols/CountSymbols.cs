@@ -18,6 +18,7 @@ public class CountSymbols
             if (sortInputChars.ContainsKey(element))
             {
                 sortInputChars[element]++;
+               
             }
             else
             {
