@@ -16,7 +16,6 @@ public class TerroristsWin
         {
             int sum = 0;
             secondIndex = inputText.IndexOf('|', firstIndex + 1);
-
             for (int i = firstIndex + 1; i <= secondIndex - 1; i++)
             {
                 sum += inputText[i];
@@ -25,14 +24,12 @@ public class TerroristsWin
             lastDigit = sum%10;
             int destroidAreaFrom = firstIndex - lastDigit;
             int destroidAreaTo = secondIndex + lastDigit;
-
             for (int i = destroidAreaFrom; i <= destroidAreaTo; i++)
             {
                 if (i >= 0 && i < resultAfterBomb.Length)
                 {
                     resultAfterBomb[i] = '.';
                 }
-               
             }
 
             firstIndex = inputText.IndexOf('|', secondIndex + 1);
