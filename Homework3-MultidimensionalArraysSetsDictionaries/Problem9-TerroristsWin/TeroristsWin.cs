@@ -17,7 +17,6 @@ public class TerroristsWin
             int sum = 0;
             secondIndex = inputText.IndexOf('|', firstIndex + 1);
 
-
             for (int i = firstIndex + 1; i <= secondIndex - 1; i++)
             {
                 sum += inputText[i];
