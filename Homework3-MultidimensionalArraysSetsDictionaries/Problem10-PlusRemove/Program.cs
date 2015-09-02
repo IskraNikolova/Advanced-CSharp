@@ -42,15 +42,6 @@ public class PlusRemove
             }
         }
 
-        //foreach (List<char> element in copyMatrix)
-        //{
-        //    for (int row = 0; row < element.Count; row++)
-        //    {
-        //        element.Remove(' ');
-                
-        //    }
-        //}
-
         for (int row = 0; row < matrix.Count; row++)
         {
             for (int col = 0; col < copyMatrix[row].Count; col++)
