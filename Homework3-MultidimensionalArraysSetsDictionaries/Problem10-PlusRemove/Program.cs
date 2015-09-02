@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
 
 public class PlusRemove
 {
@@ -20,6 +18,7 @@ public class PlusRemove
             matrix.Add(input.ToLower().ToCharArray());
             copyMatrix.Add(input.ToList());
         }
+
         for (int row = 1; row < matrix.Count - 1; row++)
         {
             for (int col = 1; col < matrix[row].Length - 1; col++)
@@ -42,19 +41,21 @@ public class PlusRemove
                 }
             }
         }
-        for (int i = 0; i < copyMatrix.Count; i++)
-        {
-            for (int j = 0; j < copyMatrix[i].Count; j++)
-            {
-                    copyMatrix[i].Remove(' ');
+
+        //foreach (List<char> element in copyMatrix)
+        //{
+        //    for (int row = 0; row < element.Count; row++)
+        //    {
+        //        element.Remove(' ');
                 
-            }
-        }
-        for (int i = 0; i < matrix.Count; i++)
+        //    }
+        //}
+
+        for (int row = 0; row < matrix.Count; row++)
         {
-            for (int j = 0; j < copyMatrix[i].Count; j++)
+            for (int col = 0; col < copyMatrix[row].Count; col++)
             {
-                Console.Write(copyMatrix[i][j].ToString().Trim());
+                Console.Write(copyMatrix[row][col].ToString().Trim());
                 
             }
             Console.WriteLine();
