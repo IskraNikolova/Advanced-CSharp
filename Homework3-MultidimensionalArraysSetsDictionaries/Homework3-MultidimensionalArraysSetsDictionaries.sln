@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11-StringMatrixRotat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12-ToTheStars", "Problem12-ToTheStars\Problem12-ToTheStars.csproj", "{AAB7A416-D90C-4842-99B0-81B47819C54F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem13-ActivityTracker", "Problem13-ActivityTracker\Problem13-ActivityTracker.csproj", "{2E462919-5B8E-41F8-B3E8-2CF995331ECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
