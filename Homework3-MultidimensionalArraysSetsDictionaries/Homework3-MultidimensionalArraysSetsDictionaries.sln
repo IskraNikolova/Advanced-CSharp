@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10-PlusRemove", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11-StringMatrixRotation", "Problem11-StringMatrixRotation\Problem11-StringMatrixRotation.csproj", "{6EC9DC0E-A2D7-4A3E-B887-0673FCF2EEDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12-ToTheStars", "Problem12-ToTheStars\Problem12-ToTheStars.csproj", "{AAB7A416-D90C-4842-99B0-81B47819C54F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{6EC9DC0E-A2D7-4A3E-B887-0673FCF2EEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EC9DC0E-A2D7-4A3E-B887-0673FCF2EEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EC9DC0E-A2D7-4A3E-B887-0673FCF2EEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB7A416-D90C-4842-99B0-81B47819C54F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
