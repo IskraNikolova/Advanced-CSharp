@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2-StringLength", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-CountSubstringOccurrences", "Problem3-CountSubstringOccurrences\Problem3-CountSubstringOccurrences.csproj", "{D803EE4E-4F24-4F7E-8FBC-5128A802AE12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-TextFilter", "Problem4-TextFilter\Problem4-TextFilter.csproj", "{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D803EE4E-4F24-4F7E-8FBC-5128A802AE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D803EE4E-4F24-4F7E-8FBC-5128A802AE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D803EE4E-4F24-4F7E-8FBC-5128A802AE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
