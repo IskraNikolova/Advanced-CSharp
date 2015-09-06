@@ -5,11 +5,15 @@ using System.Text;
 
 public class TextFilter
 {
+    /// <summary>
+    /// A program that takes a text and a string of banned words. All words included in the ban list should be replaced with asterisks "*",
+    ///  equal to the word's length. The entries in the ban list will be separated by a comma and space ", ".
+    /// </summary>
     public static void Main()
     {
-       
         List<string> banWords = Console.ReadLine().Split(new []{',', ' '}, StringSplitOptions.RemoveEmptyEntries).ToList();
         string text = Console.ReadLine();
+
         StringBuilder textBuilder = new StringBuilder(text);
         for (int i = 0; i < banWords.Count; i++)
         {

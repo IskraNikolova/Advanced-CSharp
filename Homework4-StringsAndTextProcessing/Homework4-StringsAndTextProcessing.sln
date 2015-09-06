@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-CountSubstringOccu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-TextFilter", "Problem4-TextFilter\Problem4-TextFilter.csproj", "{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-UnicodeCharacters", "Problem5-UnicodeCharacters\Problem5-UnicodeCharacters.csproj", "{E69613A8-AB5A-41BD-B4CB-03C586073807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A214C1-D9AE-4558-ACF2-CF9FF6DE899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69613A8-AB5A-41BD-B4CB-03C586073807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69613A8-AB5A-41BD-B4CB-03C586073807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69613A8-AB5A-41BD-B4CB-03C586073807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69613A8-AB5A-41BD-B4CB-03C586073807}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
