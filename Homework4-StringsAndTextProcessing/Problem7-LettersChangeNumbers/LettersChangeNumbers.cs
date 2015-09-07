@@ -7,7 +7,7 @@ public class LettersChangeNumbers
     public static void Main()
     {
       
-        string[] input = Console.ReadLine().Split(' ').ToArray();
+        string[] input = Console.ReadLine().Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
         double sum = 0;
         for (int i = 0; i < input.Length; i++)
@@ -66,7 +66,7 @@ public class LettersChangeNumbers
         string pattern = @"(\d+)";
         Regex regex = new Regex(pattern);
         Match match = regex.Match(input);
-        double result = double.Parse(match.ToString());
+        int result = int.Parse(match.ToString());
 
         return result;
     }
