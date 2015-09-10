@@ -3,6 +3,9 @@ using System.Text.RegularExpressions;
 
 public class SeriesOfLetters
 {
+    /// <summary>
+    /// Aprogram that reads a string from the console and replaces all series of consecutive identical letters with a single one.
+    /// </summary>
     public static void Main()
     {
         string input = Console.ReadLine();
