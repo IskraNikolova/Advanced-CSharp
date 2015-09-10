@@ -7,10 +7,15 @@ public class ValidUserName
 {
     public static void Main()
     {
-        string[] input = Console.ReadLine().Split(new []{' ', '/', '\\', '(', ')'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
+        const int minLength = 3;
+        const int maxLength = 25;
 
-        int minLength = 3;
-        int maxLength = 25;
+
+        string[] input =
+                    Console.ReadLine().Split(new[] {' ', '/', '\\', '(', ')'}, 
+                    StringSplitOptions.RemoveEmptyEntries).ToArray();
+
+   
         List<string> validUserName = new List<string>();
         for (int i = 0; i < input.Length; i++)
         {
@@ -23,7 +28,6 @@ public class ValidUserName
                 {
                     validUserName.Add(input[i]);
                 }
-              
             }
         }
 
@@ -39,8 +43,11 @@ public class ValidUserName
                 secondUserName = validUserName[i + 1];
             }
         }
-        Console.WriteLine("{0}\n{1}", firstUserName, secondUserName);
-    }
 
+        Console.WriteLine("{0}\n{1}", firstUserName, secondUserName);
+
+
+        //check this solution in Softuni Judge 100/100
+    }
 }
 
