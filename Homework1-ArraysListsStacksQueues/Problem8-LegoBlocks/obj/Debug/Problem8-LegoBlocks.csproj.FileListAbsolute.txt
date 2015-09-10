@@ -4,3 +4,6 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\bin\Debu
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\obj\Debug\Problem8-LegoBlocks.csprojResolveAssemblyReference.cache
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\obj\Debug\Problem8-LegoBlocks.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\obj\Debug\Problem8-LegoBlocks.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\bin\Debug\Problem8-LegoBlocks.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\obj\Debug\Problem8-LegoBlocks.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem8-LegoBlocks\obj\Debug\Problem8-LegoBlocks.pdb

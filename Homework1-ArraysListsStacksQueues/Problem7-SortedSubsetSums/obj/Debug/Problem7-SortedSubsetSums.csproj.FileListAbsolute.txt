@@ -3,3 +3,6 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bi
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bin\Debug\Problem7-SortedSubsetSums.pdb
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\bin\Debug\Problem7-SortedSubsetSums.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem7-SortedSubsetSums\obj\Debug\Problem7-SortedSubsetSums.pdb
