@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 public class ReplaceATag
 {
     /// <summary>
-    /// A program that replaces in a HTML document given as string all the tags <a href=…>…</a> 
+    /// A program that replaces in a HTML document given as string all the tags <a href=...>…</a> 
     /// with corresponding tags [URL href=…]…[/URL]. Print the result on the console.
     /// </summary>
     public static void Main()
