@@ -8,80 +8,51 @@ public class LegoBlocks
     {
         int rows = int.Parse(Console.ReadLine());
 
-        int[][] firstJaggedAray = new int[rows][];
-        int[][] secondJaggedAray = new int[rows][];
-
-
-        List<int> rowsOfFirstAray = new List<int>();
-        List<int> rowsOfSecondAray = new List<int>();
-        for (int i = 0; i < rows; i++)
+        List<int[]> firstBlocks = new List<int[]>();
+        for (int row = 0; row < rows; row++)
         {
-            rowsOfFirstAray = Console.ReadLine()
-                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse).ToList();
-
-            firstJaggedAray[i] = rowsOfFirstAray.ToArray();
+            int[] inputRowOfFirstBlocks = Console.ReadLine()
+                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+            firstBlocks.Add(inputRowOfFirstBlocks);
         }
 
-        for (int i = 0; i < rows; i++)
+        List<int[]> secondBlocks = new List<int[]>();
+        for (int row = 0; row < rows; row++)
         {
-            rowsOfSecondAray = Console.ReadLine()
-                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse).ToList();
-
-            secondJaggedAray[i] = rowsOfSecondAray.ToArray();
+            int[] inputRowOfSecondBlocks = Console.ReadLine()
+                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+            Array.Reverse(inputRowOfSecondBlocks);
+            secondBlocks.Add(inputRowOfSecondBlocks);
         }
 
-        bool revision = true;
-
-
-        int rowLenght = firstJaggedAray[0].Length + secondJaggedAray[0].Length;
-        int counterblocks = rowLenght;
-
-        for (int i = 1; i < rows; i++)
+        int column = firstBlocks[0].Length + secondBlocks[0].Length;
+        int count = 1;
+        int sells = column;
+        for (int row = 1; row < rows; row++)
         {
-            int leftSide = firstJaggedAray[i].Length;
-            int rightSide = secondJaggedAray[i].Length;
-
-            counterblocks += leftSide + rightSide;
-            if (firstJaggedAray[i].Length + secondJaggedAray[i].Length != rowLenght)
+            if (rows > 1 && firstBlocks[row].Length + secondBlocks[row].Length == column)
             {
-                revision = false;
+                count++;
+
             }
+            sells += firstBlocks[row].Length + secondBlocks[row].Length;
         }
 
-        if (revision)
+        if (count == rows)
         {
-            int count = 0;
-            for (int i = 0; i < rows; i++)
+            for (int row = 0; row < rows; row++)
             {
-                int length = firstJaggedAray[i].Length + secondJaggedAray[i].Length;
-
-
-                int[] result = new int[length];
-
-                for (int j = 0; j < length; j++)
-                {
-                    if (j < firstJaggedAray[i].Length)
-                    {
-                        result[j] = firstJaggedAray[i][j];
-                    }
-
-                    else
-                    {
-
-                        result[j] = secondJaggedAray[i][(secondJaggedAray[i].Length - 1) - count];
-                        count++;
-                    }
-                }
-
-                Console.WriteLine("[" + string.Join(", ", result) + "]");
-                count = 0;
+                Console.WriteLine("[" + string.Join(", ", firstBlocks[row]) + ", " + string.Join(", ", secondBlocks[row]) + "]");
             }
         }
         else
         {
-            Console.WriteLine("The total number of cells is: " + counterblocks);
+            Console.WriteLine("The total number of cells is: {0}", sells);
         }
+
     }
 }
