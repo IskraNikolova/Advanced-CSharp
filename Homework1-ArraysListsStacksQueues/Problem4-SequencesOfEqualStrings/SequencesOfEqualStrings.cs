@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 public class SequencesOfEqualStrings
@@ -9,33 +8,29 @@ public class SequencesOfEqualStrings
     /// </summary>
     public static void Main()
     {
-        string[] inputStrings = Console.ReadLine().Split(' ').ToArray();
+        string[] input = Console.ReadLine().Split(' ').ToArray();
 
-        List<string> sequences = new List<string>();
-        for (int i = 0; i < inputStrings.Length - 1; i++)
+        for (int i = 0; i < input.Length - 1; i++)
         {
-            if (inputStrings[i] != inputStrings[i + 1])
+            if (input[i] == input[i + 1])
             {
-                sequences.Add(inputStrings[i]);
-                Console.WriteLine(string.Join(" ", sequences));
-                sequences.Clear();
-            }
-            if (inputStrings[i] == inputStrings[i + 1])
-            {
-                sequences.Add(inputStrings[i]);
-                if (i == inputStrings.Length - 2)
+                Console.Write(input[i] + " ");
+                if (i == input.Length - 2)
                 {
-                    Console.Write("{0} ", inputStrings[i + 1]);
+                    Console.Write(input[i + 1]);
+                    Console.WriteLine();
                 }
             }
-
+            else
+            {
+                Console.Write(input[i] + " ");
+                Console.WriteLine();
+                if (i == input.Length - 2)
+                {
+                    Console.WriteLine(input[i + 1]);
+                }
+            }
         }
-        if (inputStrings[inputStrings.Length - 2] != inputStrings[inputStrings.Length - 1])
-        {
-            Console.Write(inputStrings[inputStrings.Length - 1]);
-        }
-       
-        Console.WriteLine(string.Join(" ", sequences));
     }
 }
 

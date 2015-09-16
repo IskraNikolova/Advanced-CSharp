@@ -7,3 +7,6 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\obj\Debu
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\bin\Debug\Problem5-SubsetSums.exe.config
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\obj\Debug\Problem5-SubsetSums.exe
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\obj\Debug\Problem5-SubsetSums.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\bin\Debug\Problem5-SubsetSums.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\bin\Debug\Problem5-SubsetSums.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-SubsetSums\obj\Debug\Problem5-SubsetSums.csprojResolveAssemblyReference.cache

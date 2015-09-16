@@ -5,63 +5,60 @@ using System.Linq;
 public class LongestIncreasingSequence
 {
     /// <summary>
-    /// Write a program to find all increasing sequences inside an array of integers and 
-    /// find also the longest increasing sequence and print it at the last line.
+    /// A program to find all increasing sequences inside an array of integers.
+    /// Find also the longest increasing sequence and print it at the last line. 
     /// </summary>
     public static void Main()
     {
-        int[] inputNumbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-        int maxCount = 0;
+        int[] inputNumbers = Console.ReadLine()
+                                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                                .Select(int.Parse)
+                                .ToArray();
 
-        List<int> sequenseOfNumbers = new List<int>();
-        List<int> maxSequences = new List<int>();
-        for (int i = 0; i < inputNumbers.Length - 1; i++)
+        int largestCountOfSequences = 0;
+        List<int> largestSequence = new List<int>();
+        string result = String.Empty;
+
+        for (int index = 0; index < inputNumbers.Length - 1; index++)
         {
-            if (inputNumbers[i] < inputNumbers[i + 1])
+            if (inputNumbers[index] < inputNumbers[index + 1])
             {
-                sequenseOfNumbers.Add(inputNumbers[i]);
+                largestSequence.Add(inputNumbers[index]);
+
+                if (index == inputNumbers.Length - 2)
+                {
+                    largestSequence.Add(inputNumbers[index + 1]);
+                    Console.WriteLine(string.Join(" ", largestSequence));
+
+                    if (largestCountOfSequences < largestSequence.Count)
+                    {
+                        largestCountOfSequences = largestSequence.Count;
+                        result = string.Join(" ", largestSequence);
+                    }
+                }
             }
-         
             else
             {
-                sequenseOfNumbers.Add(inputNumbers[i]);
-                if (sequenseOfNumbers.Count > maxCount)
+                largestSequence.Add(inputNumbers[index]);
+                Console.WriteLine(string.Join(" ", largestSequence));
+
+                if (largestCountOfSequences < largestSequence.Count)
                 {
-                    maxSequences.Clear();
-                    maxCount = sequenseOfNumbers.Count;
-                    CopyMaxSequencesOfNumber(sequenseOfNumbers, maxSequences);
+                    largestCountOfSequences = largestSequence.Count;
+                    result = string.Join(" ", largestSequence);
+
                 }
 
-                Console.WriteLine(string.Join(" ", sequenseOfNumbers));
-                sequenseOfNumbers.Clear();
-            }
-
-            if (inputNumbers[i] < inputNumbers[i + 1] && i == inputNumbers.Length - 2)
-            {
-                sequenseOfNumbers.Add(inputNumbers[i + 1]);
-
-                Console.WriteLine(string.Join(" ", sequenseOfNumbers));
-                if (sequenseOfNumbers.Count > maxCount)
+                largestSequence.Clear();
+                if (index == inputNumbers.Length - 2)
                 {
-                    maxSequences.Clear();
-                    maxCount = sequenseOfNumbers.Count;
-                    CopyMaxSequencesOfNumber(sequenseOfNumbers, maxSequences);
+                    largestSequence.Add(inputNumbers[index + 1]);
+                    Console.WriteLine(string.Join(" ", largestSequence));
                 }
             }
-
         }
 
-        Console.WriteLine("Longest: " + string.Join(" ", maxSequences));
+        Console.WriteLine("Longest: {0}", result);
     }
-
-    static List<int> CopyMaxSequencesOfNumber(List<int> sequenseOfNumbers, List<int> maxSequences)
-    {
-        for (int j = 0; j < sequenseOfNumbers.Count; j++)
-        {
-            maxSequences.Add(sequenseOfNumbers[j]);
-        }
-
-        return maxSequences;
-    } 
 }
 

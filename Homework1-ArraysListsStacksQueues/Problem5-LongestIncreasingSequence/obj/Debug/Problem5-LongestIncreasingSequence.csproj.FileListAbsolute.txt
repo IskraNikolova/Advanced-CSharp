@@ -4,3 +4,6 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\obj\Debug\Problem5-LongestIncreasingSequence.csprojResolveAssemblyReference.cache
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\obj\Debug\Problem5-LongestIncreasingSequence.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\obj\Debug\Problem5-LongestIncreasingSequence.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\bin\Debug\Problem5-LongestIncreasingSequence.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\obj\Debug\Problem5-LongestIncreasingSequence.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem5-LongestIncreasingSequence\obj\Debug\Problem5-LongestIncreasingSequence.pdb
