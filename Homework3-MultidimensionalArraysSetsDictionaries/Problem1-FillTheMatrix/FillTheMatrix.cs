@@ -2,56 +2,52 @@ using System;
 
 public class FillTheMatrix
 {
-    public static void Main()
+    private static void Main()
     {
         int nSize = int.Parse(Console.ReadLine());
+
         int[,] matrix = new int[nSize, nSize];
 
         //Filling a matrix in the regular pattern (top to bottom).
-        for (int row = 0; row < matrix.GetLength(0); row++)
+        for (int row = 0; row < nSize; row++)
         {
-            int number = row + 1;
-            for (int column = 0; column < matrix.GetLength(1); column++)
+            for (int col = 0, num = 0; col < nSize; num = num + nSize, col++)
             {
-
-                matrix[row, column] = number;
-                Console.Write(matrix[row, column] + " ");
-                number += 4;
+                matrix[row, col] = (row + 1) + num;
+                Console.Write("{0} ", matrix[row, col]);
             }
 
             Console.WriteLine();
         }
-
-        Console.WriteLine();
-
-        //Filling a matrix in the regular pattern (left to right).
-        int count = 1;
-        for (int row = 0; row < nSize; row++)
-        {
-            if (row%2 == 0)
+        Console.WriteLine("*****************************");
+    //Filling a matrix in the regular pattern (left to right).
+    int count = 1;
+            for (int row = 0; row < nSize; row++)
             {
-                for (int column = 0; column < nSize; column++)
+                if (row%2 == 0)
                 {
-                    matrix[column, row] = count++;
+                    for (int column = 0; column < nSize; column++)
+                    {
+                        matrix[column, row] = count++;
+                    }
+                }
+                else
+                {
+                    for (int column = nSize - 1; column >= 0; column--)
+                    {
+                        matrix[column, row] = count++;
+                    }
                 }
             }
-            else
-            {
-                for (int column = nSize - 1; column >= 0; column--)
-                {
-                    matrix[column, row] = count++;
-                }
-            }
-        }
 
-        for (int row = 0; row < nSize; row++)
-        {
-            for (int cow = 0; cow < nSize; cow++)
+            for (int row = 0; row < nSize; row++)
             {
-                Console.Write(matrix[row, cow] + " ");
+                for (int cow = 0; cow < nSize; cow++)
+                {
+                    Console.Write(matrix[row, cow] + " ");
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
-        }
     }
 }
 
