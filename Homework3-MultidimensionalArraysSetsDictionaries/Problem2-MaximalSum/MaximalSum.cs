@@ -1,52 +1,59 @@
 ﻿using System;
+using System.Linq;
 
 public class MaximalSum
 {
     /// <summary>
-    /// a program that reads a rectangular integer matrix of size N x M and finds in it the square 3 x 3 
-    /// that has maximal sum of its elements. 
+    /// A program that reads a rectangular integer matrix of size N x M and 
+    /// finds in it the square 3 x 3 that has maximal sum of its elements. 
     /// </summary>
-    public static void Main()
+    private static void Main()
     {
-        int[] rowAndColumn = { 4, 5 };
-        int rows = rowAndColumn[0];
-        int columns = rowAndColumn[1];
-    
-        int[,] matrix =
-        {
-            { 1, 5, 5, 2, 4 },
-            { 2, 1, 4, 14, 3 },
-            { 3, 7, 11, 2, 8 },
-            { 4, 8, 12, 16, 4 }
-        };
+        const int length = 3;
 
-        int maxSum = int.MinValue;
-        int maxSumRow = 0;
-        int maxSumCol = 0;
-        for (int row = 0; row < rows - 2; row++)
+        int[] size = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        int rows = size[0];
+        int column = size[1];
+
+        int[,] matrix = new int[rows, column];
+        for (int row = 0; row < rows; row++)
         {
-            for (int column = 0; column < columns - 2; column++)
+            int[] rowOfMatrix =
+                Console.ReadLine()
+                    .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(int.Parse)
+                    .ToArray();
+            for (int col = 0; col < column; col++)
             {
-                int sum = matrix[row, column] + matrix[row, column + 1] + matrix[row, column + 2]
-                          + matrix[row + 1, column] + matrix[row + 1, column + 1] + matrix[row + 1, column + 2]
-                          + matrix[row + 2, column] + matrix[row + 2, column + 1] + matrix[row + 2, column + 2];
-
-                if (sum > maxSum)
-                {
-                    maxSum = sum;
-                    maxSumRow = row;
-                    maxSumCol = column;
-                }
+                matrix[row, col] = rowOfMatrix[col];
             }
         }
-
-        Console.WriteLine("sum = {0}", maxSum);
-
-        for (int i = maxSumRow; i <= maxSumRow + 2; i++)
+        int bestSum = Int32.MinValue;
+        int bestRow = 0;
+        int bestCol = 0;
+        for (int row = 0; row < matrix.GetLength(0) - 2; row++)
         {
-            for (int j = maxSumCol; j <= maxSumCol + 2; j++)
+            for (int col = 0; col < matrix.GetLength(1) - 2; col++)
             {
-                Console.Write("{0,3}", matrix[i, j]);
+                int sum = matrix[row, col] + matrix[row, col + 1] + matrix[row, col + 2] +
+                          matrix[row + 1, col] + matrix[row + 1, col + 1] + matrix[row + 1, col + 2] +
+                          matrix[row + 2, col] + matrix[row + 2, col + 1] + matrix[row + 2, col + 2];
+                if (sum > bestSum)
+                {
+                    bestSum = sum;
+                    bestRow = row;
+                    bestCol = col;
+                }
+
+            }
+        }
+        Console.WriteLine("Sum = {0}", bestSum);
+
+        for (int row = bestRow; row < bestRow + length; row++)
+        {
+            for (int col = bestCol; col < bestCol + length; col++)
+            {
+                Console.Write("{0} ", matrix[row, col]);
             }
             Console.WriteLine();
         }
