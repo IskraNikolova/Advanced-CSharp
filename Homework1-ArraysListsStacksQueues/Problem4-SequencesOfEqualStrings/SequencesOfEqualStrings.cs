@@ -8,27 +8,20 @@ public class SequencesOfEqualStrings
     /// </summary>
     public static void Main()
     {
-        string[] input = Console.ReadLine().Split(' ').ToArray();
+        string[] input = Console.ReadLine()
+                            .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                            .ToArray();
 
-        for (int i = 0; i < input.Length - 1; i++)
+        for (int i = 0; i < input.Length; i++)
         {
-            if (input[i] == input[i + 1])
+            if (i < input.Length - 1 && input[i] == input[i + 1])
             {
-                Console.Write(input[i] + " ");
-                if (i == input.Length - 2)
-                {
-                    Console.Write(input[i + 1]);
-                    Console.WriteLine();
-                }
+                Console.Write("{0} ", input[i]);
             }
             else
             {
-                Console.Write(input[i] + " ");
+                Console.Write("{0} ", input[i]);
                 Console.WriteLine();
-                if (i == input.Length - 2)
-                {
-                    Console.WriteLine(input[i + 1]);
-                }
             }
         }
     }
