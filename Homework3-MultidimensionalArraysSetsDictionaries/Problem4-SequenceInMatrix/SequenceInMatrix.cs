@@ -3,21 +3,23 @@ using System.Collections.Generic;
 
 public class SequenceInMatrix
 {
-    public static void Main()
+    private static void Main()
     {
-        string[,] matrix =
-        {
-            {"ha", "c", "d", "c"},
-            {"a", "ha", "h", "ff"},
-            {"d", "", "ha", "ho"},
-        };
+        Console.Write("N = ");
+        int rows = int.Parse(Console.ReadLine());
 
-        //string[,] matrix2 =
-        //{
-        //    {"s", "qq", "s"},
-        //    {"pp", "pp", "s"},
-        //    {"pp", "qq", "s"}
-        //};
+        Console.Write("M = ");
+        int columns = int.Parse(Console.ReadLine());
+
+        string[,] matrix = new string[rows, columns];
+        for (int row = 0; row < rows; row++)
+        {
+            string[] input = Console.ReadLine().Split(' ');
+            for (int col = 0; col < columns; col++)
+            {
+                matrix[row, col] = input[col];
+            }
+        }
 
         string columnSequence = SearchSequenceInColumnsOfMatrix(matrix);
         string rowSequence = SearchSequenceInRowsOfMatrix(matrix);
@@ -28,70 +30,9 @@ public class SequenceInMatrix
         PrintResult(toResult);
     }
 
-    /// <summary>
-    /// Print result 
-    /// </summary>
-    /// <param name="toResult">string whit information for count of longest sequence and one of sequence elements</param>
-    public static void PrintResult(string toResult)
-    {
-        List<string> result = new List<string>();
-
-        for (int i = 0; i < int.Parse(toResult.Split(' ')[1]); i++)
-        {
-            result.Add(toResult.Split(' ')[0]);
-        }
-
-        Console.WriteLine(string.Join(", ", result));
-    }
-
-
-    /// <summary>
-    /// Search long sequence
-    /// </summary>
-    /// <param name="columnSequence">sequence of columns</param>
-    /// <param name="rowSequence">sequence of rows</param>
-    /// <param name="leftDiagonalSequence"> sequence of one of diagonal</param>
-    /// <param name="rightDiagonalSequence">sequence of one of diagonal</param>
-    /// <returns></returns>
-    public static string FindMaxSequences(string columnSequence, string rowSequence,
-        string leftDiagonalSequence, string rightDiagonalSequence)
-    {
-        string[] elements = new[]
-        {
-            columnSequence.Split(' ')[0], rowSequence.Split(' ')[0],
-            leftDiagonalSequence.Split(' ')[0], rightDiagonalSequence.Split(' ')[0]
-        };
-
-        int[] counts = new[]
-        {
-            int.Parse(columnSequence.Split(' ')[1]), int.Parse(rowSequence.Split(' ')[1]),
-            int.Parse(leftDiagonalSequence.Split(' ')[1]), int.Parse(rightDiagonalSequence.Split(' ')[1])
-        };
-        int maxCount = 0;
-        string elementWithMaxCount = String.Empty;
-
-        for (int i = 0; i < elements.Length; i++)
-        {
-            if (counts[i] > maxCount)
-            {
-                maxCount = counts[i];
-                elementWithMaxCount = elements[i];
-            }
-        }
-
-        maxCount ++;
-        return elementWithMaxCount + " " + maxCount;
-    }
-
-
-    /// <summary>
-    /// Search of rows sequence
-    /// </summary>
-    /// <param name="matrix">input matrix</param>
-    /// <returns>result</returns>
+    //Method that finds the longest sequence of equal strings in the rows in the matrix.
     public static string SearchSequenceInRowsOfMatrix(string[,] matrix)
     {
-
         List<string> sequenceInMatrixRowList = new List<string>();
         string rowSequence = string.Empty;
         int counterRow = 0;
@@ -100,7 +41,7 @@ public class SequenceInMatrix
             sequenceInMatrixRowList.Clear();
             for (int row = 0; row < matrix.GetLength(0) - 1; row++)
             {
-             
+
                 if (matrix[row, column] == matrix[row + 1, column])
                 {
                     sequenceInMatrixRowList.Add(matrix[row, column]);
@@ -119,11 +60,7 @@ public class SequenceInMatrix
         return rowSequence + " " + counterRow;
     }
 
-    /// <summary>
-    /// Search sequence of columns
-    /// </summary>
-    /// <param name="matrix">input matrix</param>
-    /// <returns>result</returns>
+    //Method that finds the longest sequence of equal strings in the columns in the matrix.
     public static string SearchSequenceInColumnsOfMatrix(string[,] matrix)
     {
         List<string> sequenceInMatrixColumnList = new List<string>();
@@ -156,11 +93,7 @@ public class SequenceInMatrix
         return columnSequence + " " + counterColumn;
     }
 
-    /// <summary>
-    ///  Search of one qf diagonalssequence
-    /// </summary>
-    /// <param name="matrix">input matrix</param>
-    /// <returns>result</returns>
+    //Method that finds the longest sequence of equal strings in the left diagonals in the matrix.
     public static string SearchSequenceInLeftDiagonalOfMatrix(string[,] matrix)
     {
 
@@ -189,7 +122,7 @@ public class SequenceInMatrix
         for (int count = 0; count < matrix.GetLength(1) - 1; count++)
         {
             sequenceInMatrixLeftDiagonalList.Clear();
-            for (int column = count + 1, row = 0; column < matrix.GetLength(1) - 1; row++ , column++)
+            for (int column = count + 1, row = 0; column < matrix.GetLength(1) - 1; row++, column++)
             {
                 if (matrix[row, column] == matrix[row + 1, column + 1])
                 {
@@ -210,12 +143,7 @@ public class SequenceInMatrix
         return leftDiagonalSequence + " " + counterLeftDiagonal;
     }
 
-
-    /// <summary>
-    /// Search of one qf diagonalssequence
-    /// </summary>
-    /// <param name="matrix">input matrix</param>
-    /// <returns>result</returns>
+    //Method that finds the longest sequence of equal strings in the right diagonals in the matrix.
     public static string SearchSequenceInRightDiagonalOfMatrix(string[,] matrix)
     {
         List<string> sequenceInMatrixRightDiagonalList = new List<string>();
@@ -251,7 +179,7 @@ public class SequenceInMatrix
                     sequenceInMatrixRightDiagonalList.Add(matrix[row, column]);
 
                 }
-           }
+            }
             if (sequenceInMatrixRightDiagonalList.Count > counterRightDiagonal)
             {
                 counterRightDiagonal = sequenceInMatrixRightDiagonalList.Count;
@@ -263,9 +191,56 @@ public class SequenceInMatrix
         {
             rightDiagonalSequence = "no";
         }
-        
+
         return rightDiagonalSequence + " " + counterRightDiagonal;
     }
+
+
+
+    //Search max long sequences.
+    public static string FindMaxSequences(string columnSequence, string rowSequence,
+        string leftDiagonalSequence, string rightDiagonalSequence)
+    {
+        string[] elements = new[]
+        {
+            columnSequence.Split(' ')[0], rowSequence.Split(' ')[0],
+            leftDiagonalSequence.Split(' ')[0], rightDiagonalSequence.Split(' ')[0]
+        };
+
+        int[] counts = new[]
+        {
+            int.Parse(columnSequence.Split(' ')[1]), int.Parse(rowSequence.Split(' ')[1]),
+            int.Parse(leftDiagonalSequence.Split(' ')[1]), int.Parse(rightDiagonalSequence.Split(' ')[1])
+        };
+        int maxCount = 0;
+        string elementWithMaxCount = String.Empty;
+
+        for (int i = 0; i < elements.Length; i++)
+        {
+            if (counts[i] > maxCount)
+            {
+                maxCount = counts[i];
+                elementWithMaxCount = elements[i];
+            }
+        }
+
+        maxCount++;
+        return elementWithMaxCount + " " + maxCount;
+    }
+
+    //Print result.
+    public static void PrintResult(string toResult)
+    {
+        List<string> result = new List<string>();
+
+        for (int i = 0; i < int.Parse(toResult.Split(' ')[1]); i++)
+        {
+            result.Add(toResult.Split(' ')[0]);
+        }
+
+        Console.WriteLine(string.Join(", ", result));
+    }
 }
+
 
 
