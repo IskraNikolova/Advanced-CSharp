@@ -10,7 +10,7 @@ public class LargerThanNeighbours
             .Select(int.Parse)
             .ToArray();
 
-        for (int i = 1; i < numberForCheck.Length - 1; i++)
+        for (int i = 0; i < numberForCheck.Length; i++)
         {
             Console.WriteLine(IsLargerThanNeighbours(numberForCheck, i));
         }
@@ -25,7 +25,19 @@ public class LargerThanNeighbours
     /// <returns></returns>
     public static bool IsLargerThanNeighbours(int[] number, int index)
     {
-        bool isLarge = number[index] > number[index + 1] && number[index] > number[index - 1];
+        bool isLarge = false;
+        if (index > 0 && index < number.Length - 1)
+        {
+            isLarge = number[index] > number[index + 1] && number[index] > number[index - 1];
+        }
+        else if(index == 0)
+        {
+            isLarge = number[index] > number[index + 1];
+        }
+        else
+        {
+            isLarge = number[index] > number[index - 1];
+        }
 
         return isLarge;
     }
