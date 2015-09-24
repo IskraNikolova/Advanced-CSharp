@@ -1,89 +1,47 @@
 ﻿using System;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 public class LettersChangeNumbers
 {
     public static void Main()
     {
-      
-        string[] input = Console.ReadLine().Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries).ToArray();
+        string[] input = Console.ReadLine()
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            .ToArray();
 
         double sum = 0;
+
         for (int i = 0; i < input.Length; i++)
         {
-            double number = GetNumberOfString(input[i]);
-
-            if (IsUpperFirstLetter(input[i]))
+            int length = input[i].Length - 1;
+            char firstChar = input[i][0];
+            char lastChar = input[i][length];
+            string number = input[i].Substring(1, length - 1);
+            double num = double.Parse(number);
+            double resultAfterFirstOp = 0;
+            if (char.IsUpper(firstChar))
             {
-                int divider = SearchPositionInAlphabetOfFirstLetter(input[i]);
-                sum += (number/divider);
-
+                double divide = num / (char.ToLower(firstChar) - 96);
+                resultAfterFirstOp = divide;
             }
-            else
+            if (char.IsLower(firstChar))
             {
-                int multiplier = SearchPositionInAlphabetOfFirstLetter(input[i]);
-                sum += (number * multiplier);
+                double multiply = num * (char.ToLower(firstChar) - 96);
+                resultAfterFirstOp = multiply;
             }
-
-            if (IsUpperLastLetter(input[i]))
+            if (char.IsUpper(lastChar))
             {
-                int subtractNumber = SearchPositionInAlphabetOfLastLetter(input[i]);
-                sum -= subtractNumber;
-
+                double subtract = resultAfterFirstOp - (char.ToLower(lastChar) - 96);
+                sum += subtract;
             }
-            else
+            if (char.IsLower(lastChar))
             {
-                int addNumber = SearchPositionInAlphabetOfLastLetter(input[i]);
-                sum += addNumber;
+                double add = resultAfterFirstOp + (char.ToLower(lastChar) - 96);
+                sum += add;
             }
-        
         }
+
         Console.WriteLine("{0:F2}", sum);
-    }
-
-    static bool IsUpperFirstLetter(string input)
-    {
-        if (char.IsUpper(input[0]))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    static bool IsUpperLastLetter(string input)
-    {
-        int lastIndex = input.Length - 1;
-        if (char.IsUpper(input[lastIndex]))
-        {
-            return true;
-        }
-        return false;
-    }
-
-    static double GetNumberOfString(string input)
-    {
-        string pattern = @"(\d+)";
-        Regex regex = new Regex(pattern);
-        Match match = regex.Match(input);
-        int result = int.Parse(match.ToString());
-
-        return result;
-    }
-
-    static int SearchPositionInAlphabetOfFirstLetter(string input)
-    {
-        char toLowerChar = char.ToLower(input[0]);
-        int result = toLowerChar - 96;
-        return result;
-    }
-
-    static int SearchPositionInAlphabetOfLastLetter(string input)
-    {
-        int lastIndex = input.Length - 1;
-        char toLowerChar = char.ToLower(input[lastIndex]);
-        int result = toLowerChar - 96;
-        return result;
     }
 }
 
