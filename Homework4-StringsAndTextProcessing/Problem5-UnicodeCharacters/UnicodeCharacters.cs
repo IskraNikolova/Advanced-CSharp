@@ -8,10 +8,9 @@ public class UnicodeCharacters
     public static void Main()
     {
         string input = Console.ReadLine();
-        for (int i = 0; i < input.Length; i++)
+        foreach (char character in input)
         {
-            int character = (int)input[i];
-            Console.Write("\\u00{0:X}", character);
+            Console.Write("\\u00{0:X}", (ushort)character);
         }
         Console.WriteLine();
     }
