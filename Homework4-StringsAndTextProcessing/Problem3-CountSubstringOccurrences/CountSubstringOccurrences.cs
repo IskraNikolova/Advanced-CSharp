@@ -11,19 +11,24 @@ public class CountSubstringOccurrences
         input = input.ToLower();
 
         string searchSubstring = Console.ReadLine();
-        int diff = searchSubstring.Length - 1;
+
+        Console.WriteLine(CountOfEqualsSubstring(input, searchSubstring));
+    }
+
+    static int CountOfEqualsSubstring(string inputText, string searchString)
+    {
+        int diff = searchString.Length - 1;
 
         int count = 0;
-        for (int i = 0; i < input.Length - diff; i++)
+        for (int i = 0; i < inputText.Length - diff; i++)
         {
-            string substringForCheck = input.Substring(i, searchSubstring.Length);
-            if (searchSubstring == substringForCheck)
+            string substringForCheck = inputText.Substring(i, searchString.Length);
+            if (searchString == substringForCheck)
             {
                 count++;
             }
         }
-
-        Console.WriteLine(count);
+        return count;
     }
 }
 
