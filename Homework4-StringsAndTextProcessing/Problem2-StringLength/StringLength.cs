@@ -12,21 +12,27 @@ public class StringLength
     {
         const int maxLength = 20;
 
+        //string input = Console.ReadLine();
+        //StringBuilder result = new StringBuilder();
+        //for (int i = 0; i < maxLength; i++)
+        //{
+        //    if (input.Length > i)
+        //    {
+        //        result.Append(input[i]);
+        //    }
+        //    else
+        //    {
+        //        result.Append('*');
+        //    }
+        //}
+
+        //Console.WriteLine(result.ToString());
+
         string input = Console.ReadLine();
-        StringBuilder result = new StringBuilder();
         for (int i = 0; i < maxLength; i++)
         {
-            if (input.Length > i)
-            {
-                result.Append(input[i]);
-            }
-            else
-            {
-                result.Append('*');
-            }
+            Console.Write(i < input.Length ? input[i] : '*');
         }
-
-        Console.WriteLine(result.ToString());
     }
 }
 
