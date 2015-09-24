@@ -11,16 +11,25 @@ public class TextFilter
     /// </summary>
     public static void Main()
     {
-        List<string> banWords = Console.ReadLine().Split(new []{',', ' '}, StringSplitOptions.RemoveEmptyEntries).ToList();
-        string text = Console.ReadLine();
+        string inputBannedWords = Console.ReadLine();
+        List<string> bannedWords = inputBannedWords
+            .Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
 
-        StringBuilder textBuilder = new StringBuilder(text);
+        string text = Console.ReadLine();
+        Console.WriteLine(ReplaceBannedWords(bannedWords, text));
+    }
+
+
+    public static string ReplaceBannedWords(List<string> banWords, string textForChange)
+    {
+        StringBuilder textBuilder = new StringBuilder(textForChange);
         for (int i = 0; i < banWords.Count; i++)
         {
             int lengthOfWords = banWords[i].Length;
-            for (int j = 0; j < text.Length - (lengthOfWords - 1); j++)
+            for (int j = 0; j < textForChange.Length - (lengthOfWords - 1); j++)
             {
-                string subString = text.Substring(j, lengthOfWords);
+                string subString = textForChange.Substring(j, lengthOfWords);
                 if (banWords[i] == subString)
                 {
                     string newValue = new string('*', subString.Length);
@@ -28,9 +37,7 @@ public class TextFilter
                 }
             }
         }
-
-        Console.WriteLine(textBuilder.ToString());
-
+        return textBuilder.ToString();
     }
 }
 
