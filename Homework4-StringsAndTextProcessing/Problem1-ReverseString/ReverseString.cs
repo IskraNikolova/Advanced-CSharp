@@ -16,6 +16,10 @@ public class ReverseString
         }
 
         Console.WriteLine(string.Join("", reverse));
+
+        //char[] input = Console.ReadLine().ToCharArray();
+        //Array.Reverse(input);
+        //Console.WriteLine(String.Join("", input));
     }
 }
 
