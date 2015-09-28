@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-CopyBinaryFile", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-SlicingFile", "Problem5-SlicingFile\Problem5-SlicingFile.csproj", "{0F23E1DC-163D-4D50-9C48-48194F841E15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem6-ZippingSlicedFiles", "Problem6-ZippingSlicedFiles\Problem6-ZippingSlicedFiles.csproj", "{E84875A6-F772-4B67-8A65-CBFFBB6551AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84875A6-F772-4B67-8A65-CBFFBB6551AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84875A6-F772-4B67-8A65-CBFFBB6551AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84875A6-F772-4B67-8A65-CBFFBB6551AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84875A6-F772-4B67-8A65-CBFFBB6551AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
