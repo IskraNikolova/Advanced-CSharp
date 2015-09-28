@@ -8,8 +8,8 @@ public class LineNumbers
     /// </summary>
     public static void Main()
     {
-        StreamReader reader = new StreamReader("text.txt");
-        StreamWriter writer = new StreamWriter("copy.txt");
+        StreamReader reader = new StreamReader("Text.txt");
+        StreamWriter writer = new StreamWriter("Copy.txt");
 
         using (reader)
         {

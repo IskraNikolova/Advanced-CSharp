@@ -8,7 +8,7 @@ public class OddLines
     /// </summary>
     public static void Main()
     {
-        using (var reader = new StreamReader("text.txt"))
+        using (var reader = new StreamReader("Text.txt"))
         {
             int lineNumber = 0;
 

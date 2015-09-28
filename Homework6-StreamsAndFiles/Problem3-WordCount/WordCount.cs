@@ -13,9 +13,9 @@ public class WordCount
     /// </summary>
     public static void Main()
     {
-        StreamReader readerWords = new StreamReader("words.txt");
-        StreamReader readerText = new StreamReader("text.txt");
-        StreamWriter writer = new StreamWriter("result.txt");
+        StreamReader readerWords = new StreamReader("Words.txt");
+        StreamReader readerText = new StreamReader("Text.txt");
+        StreamWriter writer = new StreamWriter("Result.txt");
 
         using (readerWords)
         {

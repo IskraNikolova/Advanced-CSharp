@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3-WordCount", "Probl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4-CopyBinaryFile", "Problem4-CopyBinaryFile\Problem4-CopyBinaryFile.csproj", "{4C16660A-B426-403B-AE0C-B291F6AF378A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5-SlicingFile", "Problem5-SlicingFile\Problem5-SlicingFile.csproj", "{0F23E1DC-163D-4D50-9C48-48194F841E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4C16660A-B426-403B-AE0C-B291F6AF378A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C16660A-B426-403B-AE0C-B291F6AF378A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C16660A-B426-403B-AE0C-B291F6AF378A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F23E1DC-163D-4D50-9C48-48194F841E15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
