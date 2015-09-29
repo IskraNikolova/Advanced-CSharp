@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 public class ReverseString
@@ -17,9 +18,9 @@ public class ReverseString
 
         Console.WriteLine(string.Join("", reverse));
 
-        //char[] input = Console.ReadLine().ToCharArray();
-        //Array.Reverse(input);
-        //Console.WriteLine(String.Join("", input));
+        //string input = Console.ReadLine();
+        //string output = new string(input.Reverse().ToArray());
+        //Console.WriteLine(output);
     }
 }
 
