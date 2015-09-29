@@ -15,7 +15,6 @@ public class PrintBall
             }
         }
 
-
         int count = 0;
         while (true)
         { 
