@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem9-Disk", "Problem9-D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10-PaintBall", "Problem10-PaintBall\Problem10-PaintBall.csproj", "{591DFFF9-D34F-440A-8E8B-4FE8693E0D33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11-CouplesFrequency", "Problem11-CouplesFrequency\Problem11-CouplesFrequency.csproj", "{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{591DFFF9-D34F-440A-8E8B-4FE8693E0D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591DFFF9-D34F-440A-8E8B-4FE8693E0D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591DFFF9-D34F-440A-8E8B-4FE8693E0D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
