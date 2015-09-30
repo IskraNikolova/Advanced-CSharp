@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10-PaintBall", "Prob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11-CouplesFrequency", "Problem11-CouplesFrequency\Problem11-CouplesFrequency.csproj", "{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12-LabyrinthDash", "Problem12-LabyrinthDash\Problem12-LabyrinthDash.csproj", "{E96B3576-B045-4C97-B771-E6451C9CAEC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B8C678E-1C4F-4AE9-BD0E-5E0F1573774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96B3576-B045-4C97-B771-E6451C9CAEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96B3576-B045-4C97-B771-E6451C9CAEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96B3576-B045-4C97-B771-E6451C9CAEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96B3576-B045-4C97-B771-E6451C9CAEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
