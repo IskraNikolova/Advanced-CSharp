@@ -37,8 +37,8 @@ namespace Problem1_ClassStudent
         public override string ToString()
         {
             string marks = string.Join(",", this.Marks);
-            return $"{this.FirstName, 7:0} {this.LastName, 8} | {this.Age} |{this.FacultyNumber} |{this.Phone} " +
-                   $"|{this.email} {marks} |{this.GroupNumber}";
+            return $"{this.FirstName, 7:0} {this.LastName, 8} | {this.Age,3} |{this.FacultyNumber,-3} |{this.Phone, -10} " +
+                   $"|{this.Email, 7:0}| {marks, 3} |{this.GroupNumber}";
         }
     }
     
