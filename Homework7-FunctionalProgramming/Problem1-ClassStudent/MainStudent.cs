@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 
 namespace Problem1_ClassStudent
 {
@@ -9,22 +10,22 @@ namespace Problem1_ClassStudent
         public static void Main()
         {
             List<Student> students = new List<Student>();
-            students.Add(new Student("Sara", "Mills", 23, "898765446678", "02/678543", "smills0@marketwatch.com",
-                new List<int>() { 4, 5, 6 }, 2));
-            students.Add(new Student("Daniel", "Carter", 33, "8989987446678", "0897/693563", "dcarter1@abv.bg",
-                new List<int>() {6, 5, 6}, 3));
-            students.Add(new Student("Aaron", "Aaren", 18, "678765446678", "+3592/178543", "agibson2@house.gov",
-                new List<int>() {2, 5, 3}, 2));
-            students.Add(new Student("William", "Gitar", 21, "238765446678", "0888/123456", "walexander3@hexun.com",
-                new List<int>() {5, 5, 5}, 1));
-            students.Add(new Student("Cheryl", "Gray", 41, "768965446678", "0877/653546", "cgray6@abv.bg",
-                new List<int>() {4, 5, 6}, 2));
-            students.Add(new Student("Cheryl", "Abc", 41, "768965446678", "+359 2/653546", "cgray6@yahoo.com",
-         new List<int>() { 4, 5, 6 }, 2));
-            students.Add(new Student("Richard", "Edwards", 28, "098765446678", "0898567432", "redwardsb@uiuc.edu",
-                new List<int>() {6, 6, 6}, 3));
-            students.Add(new Student("Richard", "Moon", 28, "098765446678", "0898567432", "redwardsb@uiuc.edu",
-             new List<int>() { 6, 6, 6 }, 3));
+            students.Add(new Student("Sara", "Mills", 23, "898714446678", "02/678543", "smills0@marketwatch.com",
+                new List<int>() { 4, 5 }, 2, "OtherGroupName"));
+            students.Add(new Student("Daniel", "Carter", 33, "8989147446678", "0897/693563", "dcarter1@abv.bg",
+                new List<int>() {6, 5, 6}, 3, "FirstGroupName"));
+            students.Add(new Student("Aaron", "Aaren", 18, "678712446678", "+3592/178543", "agibson2@house.gov",
+                new List<int>() {2, 5, 3}, 2, "SecondGroupName"));
+            students.Add(new Student("William", "Gitar", 21, "238711446678", "0888/123456", "walexander3@hexun.com",
+                new List<int>() {5, 5}, 1, "FirstGroupName"));
+            students.Add(new Student("Cheryl", "Gray", 41, "768914446678", "0877/653546", "cgray6@abv.bg",
+                new List<int>() {4, 5, 6}, 2, "SecondGroupName"));
+            students.Add(new Student("Cheryl", "Abc", 41, "768910446678", "+359 2/653546", "cgray6@yahoo.com",
+         new List<int>() { 4, 5, 4 }, 2, "OtherGroupName"));
+            students.Add(new Student("Richard", "Edwards", 28, "098714446678", "0898567432", "redwardsb@uiuc.edu",
+                new List<int>() {6, 6, 6}, 3, "OtherGroupName"));
+            students.Add(new Student("Richard", "Moon", 28, "098712446678", "0898567432", "redwardsb@uiuc.edu",
+             new List<int>() { 6, 6, 6 }, 3, "FirstGroupName"));
 
             //Problem 2.Students by Group
             Console.WriteLine();
@@ -95,11 +96,63 @@ namespace Problem1_ClassStudent
             Console.WriteLine("Students with phones in Sofia (starting with 02 / +3592 / +359 2). ");
             Console.WriteLine("-----------------------------------------------------------------------");
             var subset6 = students
-            .Where(student => student.Phone.Contains("02") || student.Phone.Contains("+3592") || student.Phone.Contains("+359 2"));
+                 .Where(student => student.Phone.Contains("02") || student.Phone.Contains("+3592") || student.Phone.Contains("+359 2"));
 
             foreach (Student student in subset6)
             {
                 Console.WriteLine(student);
+            }
+
+            //Problem 8.Excellent Students
+            Console.WriteLine();
+            Console.WriteLine("Students that have at least one mark Excellent (6) ");
+            Console.WriteLine("-----------------------------------------------------------------------");
+            var subset7 = students
+                 .Where(student => student.Marks.Contains(6));
+            
+            foreach (Student student in subset7)
+            {
+                Console.WriteLine($"{student.FirstName} {student.LastName} {string.Join(", ", student.Marks)}");
+            }
+
+            //Problem 9.Weak Students
+            Console.WriteLine();
+            Console.WriteLine("Students with exactly two marks \"2\" ");
+            Console.WriteLine("-----------------------------------------------------------------------");
+            foreach (Student student in students)
+            {
+                bool isTwoMarks = student.IsHasTwoMarks();
+                if (isTwoMarks)
+                {
+                    Console.WriteLine(student);
+                }
+            }
+
+            //Problem 10.Students Enrolled in 2014
+            Console.WriteLine();
+            Console.WriteLine("Students enrolled in 2014");
+            Console.WriteLine("-----------------------------------------------------------------------");
+            foreach (Student student in students)
+            {
+                bool isThisYear = student.IsEnrolled();
+                if (isThisYear)
+                {
+                    Console.WriteLine("{0} {1}: {2}",student.FirstName, student.LastName, string.Join(", ", student.Marks));
+                }
+            }
+
+            //Problem 11.* Students by Groups
+            Console.WriteLine();
+            Console.WriteLine("Students grouped by GroupName");
+            Console.WriteLine("-----------------------------------------------------------------------");
+            var studentGroup = from student in students
+                group student by student.GroupName;
+            
+          
+
+            foreach (Student stud in studentGroup)
+            {
+                Console.WriteLine(stud);
             }
         }
     }
