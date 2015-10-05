@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Security;
 using System.Text;
@@ -9,10 +8,8 @@ public class UppercaseWords
 {
     public static void Main()
     {
-        List<string> result = new List<string>();
         while (true)
         {
-            StringBuilder builder = new StringBuilder();
             string[] input = Console.ReadLine().Split(' ');
             if (input[0] == "END")
             {
@@ -25,12 +22,11 @@ public class UppercaseWords
                 MatchCollection matches = regex.Matches(input[i]);
                 foreach (Match match in matches)
                 {
-                    string oldString = match.Groups[1].ToString();
-                    string newString = string.Empty;
+                    string oldString = match.Groups[1].ToString();                
                     string reverse = new string(oldString.Reverse().ToArray());
-                    if (match.Groups[1].Length == 1 || oldString == reverse)
+                    if (match.Groups[1].Length == 1 || oldString.Equals(reverse))
                     {
-                        newString = ReplaceWithDoubleLetters(oldString);
+                        string newString = ReplaceWithDoubleLetters(oldString);
                         input[i] = input[i].Replace(oldString, newString);
                     }
                     else
@@ -38,15 +34,11 @@ public class UppercaseWords
                         input[i] = input[i].Replace(oldString, reverse);
                     }
                 }
-               // builder.Append(input[i] + " ");
             }
-           // result.Add(builder.ToString());
-            Console.WriteLine(string.Join(" ", input));
+
+            Console.WriteLine(SecurityElement.Escape(string.Join(" ", input)));
         }
-        //for (int i = 0; i < result.Count; i++)
-        //{
-        //    Console.WriteLine(SecurityElement.Escape([i]));
-        //}
+   
     }
 
     static string ReplaceWithDoubleLetters(string oldStr)
