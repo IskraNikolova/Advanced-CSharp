@@ -11,7 +11,7 @@ namespace Problem1_ClassStudent
         {
             List<Student> students = new List<Student>();
             students.Add(new Student("Sara", "Mills", 23, "898714446678", "02/678543", "smills0@marketwatch.com",
-                new List<int>() { 4, 5 }, 2, "OtherGroupName"));
+                new List<int>() {4, 5}, 2, "OtherGroupName"));
             students.Add(new Student("Daniel", "Carter", 33, "8989147446678", "0897/693563", "dcarter1@abv.bg",
                 new List<int>() {6, 5, 6}, 3, "FirstGroupName"));
             students.Add(new Student("Aaron", "Aaren", 18, "678712446678", "+3592/178543", "agibson2@house.gov",
@@ -21,11 +21,11 @@ namespace Problem1_ClassStudent
             students.Add(new Student("Cheryl", "Gray", 41, "768914446678", "0877/653546", "cgray6@abv.bg",
                 new List<int>() {4, 5, 6}, 2, "SecondGroupName"));
             students.Add(new Student("Cheryl", "Abc", 41, "768910446678", "+359 2/653546", "cgray6@yahoo.com",
-         new List<int>() { 4, 5, 4 }, 2, "OtherGroupName"));
+                new List<int>() {4, 5, 4}, 2, "OtherGroupName"));
             students.Add(new Student("Richard", "Edwards", 28, "098714446678", "0898567432", "redwardsb@uiuc.edu",
                 new List<int>() {6, 6, 6}, 3, "OtherGroupName"));
             students.Add(new Student("Richard", "Moon", 28, "098712446678", "0898567432", "redwardsb@uiuc.edu",
-             new List<int>() { 6, 6, 6 }, 3, "FirstGroupName"));
+                new List<int>() {6, 6, 6}, 3, "FirstGroupName"));
 
             //Problem 2.Students by Group
             Console.WriteLine();
@@ -58,7 +58,7 @@ namespace Problem1_ClassStudent
             Console.WriteLine("-----------------------------------------------------------------------");
             var subset3 = students
                 .Where(student => student.Age >= 18 && student.Age <= 24);
-       
+
             foreach (Student student in subset3)
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName} - {student.Age}");
@@ -96,7 +96,10 @@ namespace Problem1_ClassStudent
             Console.WriteLine("Students with phones in Sofia (starting with 02 / +3592 / +359 2). ");
             Console.WriteLine("-----------------------------------------------------------------------");
             var subset6 = students
-                 .Where(student => student.Phone.Contains("02") || student.Phone.Contains("+3592") || student.Phone.Contains("+359 2"));
+                .Where(
+                    student =>
+                        student.Phone.Contains("02") || student.Phone.Contains("+3592") ||
+                        student.Phone.Contains("+359 2"));
 
             foreach (Student student in subset6)
             {
@@ -108,8 +111,8 @@ namespace Problem1_ClassStudent
             Console.WriteLine("Students that have at least one mark Excellent (6) ");
             Console.WriteLine("-----------------------------------------------------------------------");
             var subset7 = students
-                 .Where(student => student.Marks.Contains(6));
-            
+                .Where(student => student.Marks.Contains(6));
+
             foreach (Student student in subset7)
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName} {string.Join(", ", student.Marks)}");
@@ -137,23 +140,11 @@ namespace Problem1_ClassStudent
                 bool isThisYear = student.IsEnrolled();
                 if (isThisYear)
                 {
-                    Console.WriteLine("{0} {1}: {2}",student.FirstName, student.LastName, string.Join(", ", student.Marks));
+                    Console.WriteLine("{0} {1}: {2}", student.FirstName, student.LastName,
+                        string.Join(", ", student.Marks));
                 }
             }
-
-            //Problem 11.* Students by Groups
-            Console.WriteLine();
-            Console.WriteLine("Students grouped by GroupName");
-            Console.WriteLine("-----------------------------------------------------------------------");
-            var studentGroup = from student in students
-                group student by student.GroupName;
-            
-          
-
-            foreach (Student stud in studentGroup)
-            {
-                Console.WriteLine(stud);
-            }
         }
+
     }
 }
