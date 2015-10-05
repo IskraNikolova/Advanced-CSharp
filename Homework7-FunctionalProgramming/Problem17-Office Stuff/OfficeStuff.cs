@@ -1,45 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-public class OfficeStuff
+class OfficeStuff
 {
-    public static void Main()
+    static void Main()
     {
-        int input = int.Parse(Console.ReadLine());
-        var listOfCompany = new SortedDictionary<string, string>();
-        for (int i = 0; i < input; i++)
-        {
-            string[] inputText = Console.ReadLine().Split('-');
-            string companyNames = inputText[0].Substring(1, inputText[0].Length - 2);
-            string amount = inputText[1].Trim();
-            string product = inputText[2].Substring(1, inputText[2].Length - 2);
-            string result = $"{product}-{amount}";
+       
+        var companyOrders = new SortedDictionary<string, Dictionary<string, int>>();
+        int number = int.Parse(Console.ReadLine());
 
-            if (listOfCompany.ContainsKey(companyNames))
-            {
-                if (result.Split('-')[0] == listOfCompany[companyNames].Split('-')[0])
-                {
-                    int amountPart1 = int.Parse(result.Split('-')[1]);
-                    int amountPart2 = int.Parse(listOfCompany[companyNames].Split('-')[1]);
-                    int sum = amountPart2 + amountPart1;
-                    string resultAfterSum = result.Split('-')[0] + '-' + sum;
-                    listOfCompany[companyNames] = resultAfterSum;
-                }
-                else
-                {
-                    listOfCompany[companyNames] += ", " + result;
-                }
-            }
-            else
-            {
-                listOfCompany.Add(companyNames, result);
-            }
-        }
-
-        foreach (var company in listOfCompany)
+        for (int i = 0; i < number; i++)
         {
-            Console.WriteLine($"{company.Key}: {company.Value}");
+            string[] order = Console.ReadLine().Split(new char[] { '|', '-', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            FillDictionary(order, companyOrders);
         }
+        Print(companyOrders);
+    }
+
+    private static void Print(SortedDictionary<string, Dictionary<string, int>> companyOrders)
+    {
+        List<string> result = new List<string>();
+
+        foreach (var pair1 in companyOrders)
+        {
+            Console.Write($"{pair1.Key}: ");
+            result.AddRange(pair1.Value.Select(pair2 => String.Format("{0}-{1}", pair2.Key, pair2.Value)));
+            Console.WriteLine(string.Join(", ", result));
+            result.Clear();
+        }
+    }
+
+    private static void FillDictionary(string[] order, SortedDictionary<string, Dictionary<string, int>> companyOrders)
+    {
+        string company = order[0];
+        string product = order[2];
+        int amount = int.Parse(order[1]);
+
+        if (!companyOrders.ContainsKey(company))
+        {
+            var products = new Dictionary<string, int>();
+            products.Add(product, 0);
+            companyOrders.Add(company, products);
+        }
+        else if (!companyOrders[company].ContainsKey(product))
+        {
+            companyOrders[company].Add(product, 0);
+        }
+        companyOrders[company][product] += amount;
     }
 }
 
