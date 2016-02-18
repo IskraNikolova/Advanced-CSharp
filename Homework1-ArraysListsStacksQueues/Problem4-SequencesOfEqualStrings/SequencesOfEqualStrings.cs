@@ -16,7 +16,6 @@
                 .ToArray();
 
             var equalseGroups = new Dictionary<string, string>();
-
             for (int i = 0; i < input.Length; i++)
             {
                 if (!equalseGroups.ContainsKey(input[i]))

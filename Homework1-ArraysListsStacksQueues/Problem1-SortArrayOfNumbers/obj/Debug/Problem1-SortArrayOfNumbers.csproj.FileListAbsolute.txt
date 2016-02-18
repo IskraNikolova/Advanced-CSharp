@@ -5,3 +5,7 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.pdb
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\bin\Debug\Problem1-SortArrayOfNumbers.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem1-SortArrayOfNumbers\obj\Debug\Problem1-SortArrayOfNumbers.pdb

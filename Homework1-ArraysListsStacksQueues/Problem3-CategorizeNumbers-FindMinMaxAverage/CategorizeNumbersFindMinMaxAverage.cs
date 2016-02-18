@@ -1,37 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-public class CategorizeNumbersFindMinMaxAverage
+﻿namespace Problem3_CategorizeNumbers_FindMinMaxAverage
 {
-    public static void Main()
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    public class CategorizeNumbersFindMinMaxAverage
     {
-        double[] collectionOfNumbers = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
-
-        List<double> roundNumbers = new List<double>();
-        List<double> notRoundNumbers = new List<double>();
-
-        for (int i = 0; i < collectionOfNumbers.Length; i++)
+        public static void Main()
         {
-            if (collectionOfNumbers[i] == (int) collectionOfNumbers[i])
-            {
-                roundNumbers.Add(collectionOfNumbers[i]);
-            }
-            else
-            {
-                notRoundNumbers.Add(collectionOfNumbers[i]);
-            }
-        }
+            double[] collectionOfNumbers = Console.ReadLine()
+                .Split(' ')
+                .Select(double.Parse)
+                .ToArray();
 
-        Console.WriteLine("[" + string.Join(", ", notRoundNumbers) + "]"
+            List<double> roundNumbers = new List<double>();
+            List<double> notRoundNumbers = new List<double>();
+            for (int i = 0; i < collectionOfNumbers.Length; i++)
+            {
+                if (collectionOfNumbers[i] == (int) collectionOfNumbers[i])
+                {
+                    roundNumbers.Add(collectionOfNumbers[i]);
+                }
+                else
+                {
+                    notRoundNumbers.Add(collectionOfNumbers[i]);
+                }
+            }
+
+            Console.WriteLine("[" + string.Join(", ", notRoundNumbers) + "]"
                               + "-> min: {0}, max: {1}, sum: {2}, avg: {3:F2}", 
-                              notRoundNumbers.Min(), notRoundNumbers.Max(), 
-                              notRoundNumbers.Sum(), notRoundNumbers.Average());
+                notRoundNumbers.Min(), notRoundNumbers.Max(), 
+                notRoundNumbers.Sum(), notRoundNumbers.Average());
 
-        Console.WriteLine("[" + string.Join(", ", roundNumbers) + "]"
-                      + "-> min: {0}, max: {1}, sum: {2}, avg: {3:F2}",
-                      roundNumbers.Min(), roundNumbers.Max(),
-                      roundNumbers.Sum(), roundNumbers.Average());
+            Console.WriteLine("[" + string.Join(", ", roundNumbers) + "]"
+                              + "-> min: {0}, max: {1}, sum: {2}, avg: {3:F2}",
+                roundNumbers.Min(), roundNumbers.Max(),
+                roundNumbers.Sum(), roundNumbers.Average());
+        }
     }
 }
 

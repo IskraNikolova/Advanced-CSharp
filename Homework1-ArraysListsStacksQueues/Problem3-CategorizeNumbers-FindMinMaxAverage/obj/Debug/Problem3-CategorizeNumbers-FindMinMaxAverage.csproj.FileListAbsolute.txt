@@ -4,3 +4,9 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-F
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.csprojResolveAssemblyReference.cache
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\bin\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\bin\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\bin\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem3-CategorizeNumbers-FindMinMaxAverage\obj\Debug\Problem3-CategorizeNumbers-FindMinMaxAverage.csprojResolveAssemblyReference.cache

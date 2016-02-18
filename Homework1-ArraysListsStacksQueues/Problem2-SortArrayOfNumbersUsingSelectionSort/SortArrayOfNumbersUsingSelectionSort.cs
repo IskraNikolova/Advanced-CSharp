@@ -1,33 +1,36 @@
-﻿using System;
-using System.Linq;
-
-public class SortArrayOfNumbersUsingSelectionSort
+﻿namespace Problem2_SortArrayOfNumbersUsingSelectionSort
 {
-    /// <summary>
-    /// A program to sort an array of numbers.
-    /// !!! Use selection sort algorithm. 
-    /// </summary>
-    public static void Main()
-    {
-        int[] inputNumbers = Console.ReadLine()
-                          .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
-                          .Select(int.Parse)
-                          .ToArray();
+    using System;
+    using System.Linq;
 
-        for (int i = 0; i < inputNumbers.Length - 1; i++)
+    public class SortArrayOfNumbersUsingSelectionSort
+    {
+        /// <summary>
+        /// A program to sort an array of numbers.
+        /// !!! Use selection sort algorithm. 
+        /// </summary>
+        public static void Main()
         {
-            for (int j = i + 1; j < inputNumbers.Length; j++)
+            int[] inputNumbers = Console.ReadLine()
+                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            for (int i = 0; i < inputNumbers.Length - 1; i++)
             {
-                if (inputNumbers[i] > inputNumbers[j])
+                for (int j = i + 1; j < inputNumbers.Length; j++)
                 {
-                    int swapNumber = inputNumbers[i];
-                    inputNumbers[i] = inputNumbers[j];
-                    inputNumbers[j] = swapNumber;
+                    if (inputNumbers[i] > inputNumbers[j])
+                    {
+                        int swapNumber = inputNumbers[i];
+                        inputNumbers[i] = inputNumbers[j];
+                        inputNumbers[j] = swapNumber;
+                    }
                 }
             }
-        }
 
-        Console.WriteLine(string.Join(" ", inputNumbers));
+            Console.WriteLine(string.Join(" ", inputNumbers));
+        }
     }
 }
 

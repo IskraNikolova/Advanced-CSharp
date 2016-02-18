@@ -1,20 +1,23 @@
-﻿using System;
-using System.Linq;
-
-public class SortArrayOfNumbers
+﻿namespace Problem1_SortArrayOfNumbers
 {
-    /// <summary>
-    /// A program to read an array of numbers from the console, sort them and print them back on the console.
-    /// </summary>
-    public static void Main()
+    using System;
+    using System.Linq;
+
+    public class SortArrayOfNumbers
     {
-        int[] collectionOfNumbers = Console.ReadLine()
-                                   .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                                   .Select(int.Parse).ToArray();
+        /// <summary>
+        /// A program to read an array of numbers from the console, sort them and print them back on the console.
+        /// </summary>
+        public static void Main()
+        {
+            int[] collectionOfNumbers = Console.ReadLine()
+                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse).ToArray();
 
-        Array.Sort(collectionOfNumbers);
+            Array.Sort(collectionOfNumbers);
 
-        Console.WriteLine(string.Join(" ", collectionOfNumbers));
+            Console.WriteLine(string.Join(" ", collectionOfNumbers));
+        }
     }
 }
 
