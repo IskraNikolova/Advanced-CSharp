@@ -1,27 +1,37 @@
-﻿using System;
-using System.Linq;
-
-public class SequencesOfEqualStrings
+﻿namespace Problem4_SequencesOfEqualStrings
 {
-    /// <summary>
-    /// A program that reads an array of strings and finds in it all sequences of equal elements.
-    /// </summary>
-    public static void Main()
-    {
-        string[] input = Console.ReadLine()
-                            .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
-                            .ToArray();
+    using System;
+    using System.Linq;
+    using System.Collections.Generic;
 
-        for (int i = 0; i < input.Length; i++)
+    public class SequencesOfEqualStrings
+    {
+        /// <summary>
+        /// A program that reads an array of strings and finds in it all sequences of equal elements.
+        /// </summary>
+        public static void Main()
         {
-            if (i < input.Length - 1 && input[i] == input[i + 1])
+            string[] input = Console.ReadLine()
+                .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .ToArray();
+
+            var equalseGroups = new Dictionary<string, string>();
+
+            for (int i = 0; i < input.Length; i++)
             {
-                Console.Write("{0} ", input[i]);
+                if (!equalseGroups.ContainsKey(input[i]))
+                {
+                    equalseGroups.Add(input[i], input[i]);
+                }
+                else
+                {
+                    equalseGroups[input[i]] += $" {input[i]}";
+                }               
             }
-            else
+
+            foreach (var element in equalseGroups)
             {
-                Console.Write("{0} ", input[i]);
-                Console.WriteLine();
+                Console.WriteLine(element.Value);
             }
         }
     }
