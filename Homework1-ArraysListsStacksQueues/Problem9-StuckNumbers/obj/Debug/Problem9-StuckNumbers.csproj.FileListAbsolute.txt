@@ -4,3 +4,9 @@ F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\bin\De
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.csprojResolveAssemblyReference.cache
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.exe
 F:\AdvancedCSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\bin\Debug\Problem9-StuckNumbers.exe.config
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\bin\Debug\Problem9-StuckNumbers.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\bin\Debug\Problem9-StuckNumbers.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.csprojResolveAssemblyReference.cache
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.exe
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem9-StuckNumbers\obj\Debug\Problem9-StuckNumbers.pdb

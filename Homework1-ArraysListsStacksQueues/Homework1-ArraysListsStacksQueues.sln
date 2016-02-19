@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem9-StuckNumbers", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10-PythagoreanNumbers", "Problem10-PythagoreanNumbers\Problem10-PythagoreanNumbers.csproj", "{0E4153B1-D124-46B8-8C46-BF201939684B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1-ArraysListsStacksQueues.Test", "UnitTestProject1\Homework1-ArraysListsStacksQueues.Test.csproj", "{B6AB2631-42AA-49E0-9781-B81D01970385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{0E4153B1-D124-46B8-8C46-BF201939684B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E4153B1-D124-46B8-8C46-BF201939684B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E4153B1-D124-46B8-8C46-BF201939684B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6AB2631-42AA-49E0-9781-B81D01970385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AB2631-42AA-49E0-9781-B81D01970385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AB2631-42AA-49E0-9781-B81D01970385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AB2631-42AA-49E0-9781-B81D01970385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
