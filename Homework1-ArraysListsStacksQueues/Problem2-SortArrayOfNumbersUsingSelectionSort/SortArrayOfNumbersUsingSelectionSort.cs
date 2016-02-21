@@ -16,6 +16,13 @@
                 .Select(int.Parse)
                 .ToArray();
 
+            SelectionSort(inputNumbers);
+
+            Console.WriteLine(string.Join(" ", inputNumbers));
+        }
+
+        public static void SelectionSort(int[] inputNumbers)
+        {
             for (int i = 0; i < inputNumbers.Length - 1; i++)
             {
                 for (int j = i + 1; j < inputNumbers.Length; j++)
@@ -28,9 +35,6 @@
                     }
                 }
             }
-
-            Console.WriteLine(string.Join(" ", inputNumbers));
         }
     }
 }
-

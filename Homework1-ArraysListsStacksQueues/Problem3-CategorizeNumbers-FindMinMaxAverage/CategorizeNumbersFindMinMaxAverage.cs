@@ -1,7 +1,6 @@
 ﻿namespace Problem3_CategorizeNumbers_FindMinMaxAverage
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     public class CategorizeNumbersFindMinMaxAverage
@@ -13,30 +12,37 @@
                 .Select(double.Parse)
                 .ToArray();
 
-            List<double> roundNumbers = new List<double>();
-            List<double> notRoundNumbers = new List<double>();
-            for (int i = 0; i < collectionOfNumbers.Length; i++)
-            {
-                if (collectionOfNumbers[i] == (int) collectionOfNumbers[i])
-                {
-                    roundNumbers.Add(collectionOfNumbers[i]);
-                }
-                else
-                {
-                    notRoundNumbers.Add(collectionOfNumbers[i]);
-                }
-            }
+            var roundNumbers = collectionOfNumbers
+                .Where(number => (number == (int)number));
 
-            Console.WriteLine("[" + string.Join(", ", notRoundNumbers) + "]"
-                              + "-> min: {0}, max: {1}, sum: {2}, avg: {3:F2}", 
-                notRoundNumbers.Min(), notRoundNumbers.Max(), 
-                notRoundNumbers.Sum(), notRoundNumbers.Average());
+            var notRoundNumbers = collectionOfNumbers
+                .Where(number => (number != (int)number));
 
-            Console.WriteLine("[" + string.Join(", ", roundNumbers) + "]"
-                              + "-> min: {0}, max: {1}, sum: {2}, avg: {3:F2}",
-                roundNumbers.Min(), roundNumbers.Max(),
-                roundNumbers.Sum(), roundNumbers.Average());
+            double minNotRoundNumber = notRoundNumbers.Min();
+            double maxNotRoundNumber = notRoundNumbers.Max();
+            double sumOfNotRoundNumbers = notRoundNumbers.Sum();
+            double averageOfNotRoundNumbers = notRoundNumbers.Average();
+
+            Console.WriteLine(
+                "[{0}]-> min: {1}, max: {2}, sum: {3}, avg: {4:F2}",
+                string.Join(", ", notRoundNumbers),
+                minNotRoundNumber,
+                maxNotRoundNumber,
+                sumOfNotRoundNumbers,
+                averageOfNotRoundNumbers);
+
+            double minRoundNumber = roundNumbers.Min();
+            double maxRoundNumber = roundNumbers.Max();
+            double sumOfRoundNumbers = roundNumbers.Sum();
+            double averageOfRoundNumbers = roundNumbers.Average();
+
+            Console.WriteLine(
+                "[{0}]-> min: {1}, max: {2}, sum: {3}, avg: {4:F2}",
+                string.Join(", ", roundNumbers),
+                minRoundNumber,
+                maxRoundNumber,
+                sumOfRoundNumbers,
+                averageOfRoundNumbers);
         }
     }
 }
-

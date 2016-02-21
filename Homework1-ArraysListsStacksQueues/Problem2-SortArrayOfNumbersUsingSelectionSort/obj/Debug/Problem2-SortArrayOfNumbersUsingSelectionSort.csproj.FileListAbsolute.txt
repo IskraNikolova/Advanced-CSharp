@@ -9,3 +9,4 @@ E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem2
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem2-SortArrayOfNumbersUsingSelectionSort\obj\Debug\Problem2-SortArrayOfNumbersUsingSelectionSort.pdb
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem2-SortArrayOfNumbersUsingSelectionSort\bin\Debug\Problem2-SortArrayOfNumbersUsingSelectionSort.exe
 E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem2-SortArrayOfNumbersUsingSelectionSort\bin\Debug\Problem2-SortArrayOfNumbersUsingSelectionSort.pdb
+E:\Softuni\AdvancedC#\Advanced-CSharp\Homework1-ArraysListsStacksQueues\Problem2-SortArrayOfNumbersUsingSelectionSort\obj\Debug\Problem2-SortArrayOfNumbersUsingSelectionSort.csprojResolveAssemblyReference.cache

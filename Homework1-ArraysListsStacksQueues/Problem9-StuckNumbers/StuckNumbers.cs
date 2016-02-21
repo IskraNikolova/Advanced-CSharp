@@ -9,7 +9,7 @@
             int number = int.Parse(Console.ReadLine());
 
             string[] inputNumbers = Console.ReadLine()
-                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             bool check = false;
 
@@ -27,8 +27,12 @@
                             {
                                 if (inputNumbers[i] + inputNumbers[j] == inputNumbers[k] + inputNumbers[l])
                                 {
-                                    Console.WriteLine("{0}|{1}=={2}|{3}", inputNumbers[i], inputNumbers[j],
-                                        inputNumbers[k], inputNumbers[l]);
+                                    Console.WriteLine(
+                                        "{0}|{1}=={2}|{3}",
+                                        inputNumbers[i],
+                                        inputNumbers[j], 
+                                        inputNumbers[k], 
+                                        inputNumbers[l]);
 
                                     check = true;
                                 }

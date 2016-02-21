@@ -24,8 +24,7 @@ public class PythagoreanNumbers
                           Math.Pow(inputNumbers[a], 2) + Math.Pow(inputNumbers[b], 2) ==
                           Math.Pow(inputNumbers[c], 2))
                     {
-                        Console.WriteLine("{0}*{0} + {1}*{1} = {2}*{2}", inputNumbers[a],
-                                                        inputNumbers[b], inputNumbers[c]);
+                        Console.WriteLine("{0}*{0} + {1}*{1} = {2}*{2}", inputNumbers[a], inputNumbers[b], inputNumbers[c]);
 
                         check = true;
                     }
@@ -39,4 +38,3 @@ public class PythagoreanNumbers
         }
     }
 }
-

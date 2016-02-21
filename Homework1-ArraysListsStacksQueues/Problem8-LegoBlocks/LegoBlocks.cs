@@ -27,7 +27,6 @@
                 sells += FindCountOfSells(secondBlocks);
                 Console.WriteLine("The total number of cells is: {0}", sells);
             }
-           
         }
 
         public static void PrintPositiveResult(List<int[]> firstBlocks, List<int[]> secondBlocks)
@@ -55,7 +54,7 @@
         }
 
         public static bool CheckIsFitLegoBlocks(List<int[]> firstBlocks, List<int[]> secondBlocks)
-        {           
+        {
             bool isLegoBlocks = true;
 
             int column = firstBlocks[0].Length + secondBlocks[0].Length;
@@ -75,7 +74,7 @@
             for (int row = 0; row < rows; row++)
             {
                 int[] inputRowOfSecondBlocks = Console.ReadLine()
-                    .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
@@ -90,7 +89,7 @@
             for (int row = 0; row < rows; row++)
             {
                 int[] inputRowOfFirstBlocks = Console.ReadLine()
-                    .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 

@@ -11,7 +11,7 @@
         public static void Main()
         {
             int[] collectionOfNumbers = Console.ReadLine()
-                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse).ToArray();
 
             Array.Sort(collectionOfNumbers);
@@ -20,4 +20,3 @@
         }
     }
 }
-

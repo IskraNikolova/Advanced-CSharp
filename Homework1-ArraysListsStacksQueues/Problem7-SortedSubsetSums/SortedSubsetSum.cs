@@ -6,7 +6,8 @@
 
     public class SortedSubsetSums
     {
-        public static bool isSubsetSum;
+        private static bool isSubsetSum;
+
         public static void Main()
         {
             int sum = int.Parse(Console.ReadLine());
