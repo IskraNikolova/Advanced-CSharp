@@ -1,56 +1,68 @@
-using System;
-
-public class FillTheMatrix
+namespace Problem1_FillTheMatrix
 {
-    private static void Main()
+    using System;
+
+    public class FillTheMatrix
     {
-        int nSize = int.Parse(Console.ReadLine());
-
-        int[,] matrix = new int[nSize, nSize];
-
-        //Filling a matrix in the regular pattern (top to bottom).
-
-
-        for (int row = 0; row < nSize; row++)
+        private static void Main()
         {
-            for (int col = 0, num = 0; col < nSize; num = num + nSize, col++)
-            {
-                matrix[row, col] = (row + 1) + num;
-                Console.Write("{0} ", matrix[row, col]);
-           }
-            Console.WriteLine();
+            int nSize = int.Parse(Console.ReadLine());
+
+            int[,] matrix = new int[nSize, nSize];
+        
+            FillingAMatrixTopToBottom(nSize, matrix);
+            PrintMatrix(nSize, matrix);
+
+            Console.WriteLine("*****************************");
+
+            FillingAMatrixLeftToRight(nSize, matrix);
+            PrintMatrix(nSize, matrix);
         }
-        Console.WriteLine("*****************************");
 
-
-        //Filling a matrix in the regular pattern (left to right).
-
-        int count = 1;
-        for (int row = 0; row < nSize; row++)
+        public static void FillingAMatrixTopToBottom(int nSize, int[,] matrix)
         {
-            if (row%2 == 0)
+            for (int row = 0; row < nSize; row++)
             {
-                for (int column = 0; column < nSize; column++)
+                for (int col = 0, num = 0; col < nSize; num = num + nSize, col++)
                 {
-                    matrix[column, row] = count++;
-                }
-            }
-            else
-            {
-                for (int column = nSize - 1; column >= 0; column--)
-                {
-                    matrix[column, row] = count++;
+                    matrix[row, col] = (row + 1) + num;
                 }
             }
         }
 
-        for (int row = 0; row < nSize; row++)
+        public static void FillingAMatrixLeftToRight(int nSize, int[,] matrix)
         {
-            for (int cow = 0; cow < nSize; cow++)
+            int count = 1;
+            for (int row = 0; row < nSize; row++)
             {
-                Console.Write(matrix[row, cow] + " ");
+                if (row%2 == 0)
+                {
+                    for (int column = 0; column < nSize; column++)
+                    {
+                        matrix[column, row] = count++;
+                    }
+                }
+                else
+                {
+                    for (int column = nSize - 1; column >= 0; column--)
+                    {
+                        matrix[column, row] = count++;
+                    }
+                }
             }
-            Console.WriteLine();
+        }
+
+        public static void PrintMatrix(int nSize, int[,] matrix)
+        {
+            for (int row = 0; row < nSize; row++)
+            {
+                for (int cow = 0; cow < nSize; cow++)
+                {
+                    Console.Write(matrix[row, cow] + " ");
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }

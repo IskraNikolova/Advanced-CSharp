@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12-ToTheStars", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem13-ActivityTracker", "Problem13-ActivityTracker\Problem13-ActivityTracker.csproj", "{2E462919-5B8E-41F8-B3E8-2CF995331ECC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultidimensionalArraysSetsDictionaries.Test", "MultidimensionalArraysSetsDictionaries.Test\MultidimensionalArraysSetsDictionaries.Test.csproj", "{68BDA43F-FD6C-495D-A6E3-394C43212EAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E462919-5B8E-41F8-B3E8-2CF995331ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BDA43F-FD6C-495D-A6E3-394C43212EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BDA43F-FD6C-495D-A6E3-394C43212EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BDA43F-FD6C-495D-A6E3-394C43212EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BDA43F-FD6C-495D-A6E3-394C43212EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
