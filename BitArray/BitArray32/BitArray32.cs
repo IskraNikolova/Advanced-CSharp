@@ -44,6 +44,13 @@ namespace BitArray32
             }
         }
 
+        public static BitArray32 operator +(BitArray32 bit1, BitArray32 bit2)
+        {
+            int sum = bit1.value + bit2.value;
+
+            return new BitArray32(sum);
+        }
+
         public override string ToString()
         {
             return this.value.ToString();
